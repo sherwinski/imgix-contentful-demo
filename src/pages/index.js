@@ -30,17 +30,17 @@ export default function Home({ data }) {
 }
 
 export const query = graphql`
-query {
-  allContentfulBlogPost {
-    edges {
-      node {
-        imgUrl
-        title
-        description {
-          description
+  query {
+    allContentfulBlogPost {
+      edges {
+        node {
+          imgUrl
+          title
+          description {
+            description
+          }
         }
       }
     }
   }
-}
-`
+`;
