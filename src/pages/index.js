@@ -1,7 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
 import { ImgixGatsbyImage } from "@imgix/gatsby";
-import parse from "html-react-parser";
 
 export default function Home({ data }) {
   return (
@@ -38,6 +37,11 @@ export const query = graphql`
           title
           description {
             description
+          }
+          heroImage {
+            file {
+              url
+            }
           }
         }
       }
