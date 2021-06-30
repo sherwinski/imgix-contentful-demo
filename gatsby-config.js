@@ -15,6 +15,13 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
+    {
+      resolve: `@imgix/gatsby`,
+      options: {
+        domain: "sherwinski-contentful-wf.imgix.net",
+        defaultImgixParams: { auto: ["compress", "format"] },
+      },
+    },
     `gatsby-plugin-image`,
     `gatsby-plugin-postcss`,
   ],
